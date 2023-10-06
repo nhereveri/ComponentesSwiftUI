@@ -58,8 +58,8 @@
 		522C15752AD03DE200B86AA7 /* ComponentesSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				522C15762AD03DE200B86AA7 /* ComponentesSwiftUIApp.swift */,
-				522C15782AD03DE200B86AA7 /* ContentView.swift */,
+				5246D33D2AD06F9D00631C4B /* App */,
+				5246D33E2AD06FDA00631C4B /* Presentation */,
 				522C157A2AD03DE400B86AA7 /* Assets.xcassets */,
 				522C157C2AD03DE400B86AA7 /* Preview Content */,
 			);
@@ -72,6 +72,30 @@
 				522C157D2AD03DE400B86AA7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5246D33D2AD06F9D00631C4B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				522C15762AD03DE200B86AA7 /* ComponentesSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5246D33E2AD06FDA00631C4B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5246D33F2AD06FE100631C4B /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5246D33F2AD06FE100631C4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				522C15782AD03DE200B86AA7 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BDAE65DDE365759D18FD14B7 /* Frameworks */ = {
@@ -175,7 +199,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint lint ${SRCROOT}/ComponentesSwiftUI\n";
 		};
 		6188132077BE1F66EE6B76BB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
